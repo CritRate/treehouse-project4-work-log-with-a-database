@@ -192,7 +192,7 @@ def find_by_time_spent():
 
 def find_by_search_term():
     clear()
-    search_term = input('Enter the search term: ')
+    search_term = input('Enter the search term (task or notes): ')
     entries = database.search_by_string(search_term)
     return entries
 
